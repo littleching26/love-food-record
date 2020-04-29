@@ -82,42 +82,6 @@
             </objects>
             <point key="canvasLocation" x="1004" y="119"/>
         </scene>
-        <!--Title-->
-        <scene sceneID="m3q-mn-vD6">
-            <objects>
-                <tableViewController id="MFq-Vo-ULV" customClass="Item2TVC" customModule="love_food_record" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OMw-ri-erN">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="acC-pG-ktn">
-                                <rect key="frame" x="0.0" y="28" width="240" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="acC-pG-ktn" id="2bl-ae-m2p">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="MFq-Vo-ULV" id="pb2-kl-gtx"/>
-                            <outlet property="delegate" destination="MFq-Vo-ULV" id="Rlp-F8-jPb"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="n95-TU-cB4">
-                        <barButtonItem key="leftBarButtonItem" title="◉" id="gQc-iT-ija">
-                            <connections>
-                                <action selector="menuClick:" destination="MFq-Vo-ULV" id="PoD-qF-OFP"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jiC-eH-Qj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1896" y="832"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tgQ-wK-Rxp">
             <objects>
@@ -127,12 +91,34 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="MFq-Vo-ULV" kind="relationship" relationship="rootViewController" id="1iW-Yo-Nj7"/>
+                        <segue destination="K8L-L7-TF4" kind="relationship" relationship="rootViewController" id="mFO-ue-6xl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QW-fz-0dc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1003" y="832"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="we3-Fe-a1l">
+            <objects>
+                <viewController id="K8L-L7-TF4" customClass="Item2VC" customModule="love_food_record" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2V-C8-lRR">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="s2W-hF-dPr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="hH5-U8-vqR">
+                        <barButtonItem key="leftBarButtonItem" title="◉" id="xq9-JY-XwF">
+                            <connections>
+                                <action selector="menuClick:" destination="K8L-L7-TF4" id="0mB-qf-z0U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kX4-5g-9x3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="832"/>
         </scene>
         <!--Title-->
         <scene sceneID="43c-ix-o3x">
@@ -141,7 +127,7 @@
                     <view key="view" contentMode="scaleToFill" id="I7g-Qb-WYk" customClass="Item1">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="AQu-AN-leG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="jGC-uV-jWq">
