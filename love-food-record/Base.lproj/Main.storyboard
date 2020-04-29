@@ -43,11 +43,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="item1View" destination="1J3-eC-hJq" id="mo3-PJ-GvV"/>
+                        <outlet property="item2View" destination="QBe-FA-6ch" id="0x8-Im-rIZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <containerView opaque="NO" contentMode="scaleToFill" id="1J3-eC-hJq">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <segue destination="pLX-AP-Dw7" kind="embed" id="SyH-ka-Pib"/>
+                    </connections>
+                </containerView>
+                <containerView opaque="NO" contentMode="scaleToFill" id="QBe-FA-6ch">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <segue destination="SAd-tR-aF3" kind="embed" id="vkN-6g-13v"/>
+                    </connections>
                 </containerView>
             </objects>
             <point key="canvasLocation" x="139" y="119"/>
@@ -57,24 +71,86 @@
             <objects>
                 <navigationController id="pLX-AP-Dw7" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kLb-5f-Qg3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="240" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="ybZ-m1-5xh" kind="relationship" relationship="rootViewController" id="VYF-wl-wTX"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZJ-im-qbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1004" y="119"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="43c-ix-o3x">
+        <!--Title-->
+        <scene sceneID="m3q-mn-vD6">
             <objects>
-                <viewController id="ybZ-m1-5xh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I7g-Qb-WYk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <tableViewController id="MFq-Vo-ULV" customClass="Item2TVC" customModule="love_food_record" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OMw-ri-erN">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="acC-pG-ktn">
+                                <rect key="frame" x="0.0" y="28" width="240" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="acC-pG-ktn" id="2bl-ae-m2p">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MFq-Vo-ULV" id="pb2-kl-gtx"/>
+                            <outlet property="delegate" destination="MFq-Vo-ULV" id="Rlp-F8-jPb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="n95-TU-cB4">
+                        <barButtonItem key="leftBarButtonItem" title="◉" id="gQc-iT-ija">
+                            <connections>
+                                <action selector="menuClick:" destination="MFq-Vo-ULV" id="PoD-qF-OFP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiC-eH-Qj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tgQ-wK-Rxp">
+            <objects>
+                <navigationController id="SAd-tR-aF3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u4q-c4-CPp">
+                        <rect key="frame" x="0.0" y="44" width="240" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MFq-Vo-ULV" kind="relationship" relationship="rootViewController" id="1iW-Yo-Nj7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9QW-fz-0dc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="832"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="43c-ix-o3x">
+            <objects>
+                <viewController id="ybZ-m1-5xh" customClass="Item1VC" customModule="love_food_record" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I7g-Qb-WYk" customClass="Item1">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="AQu-AN-leG"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="jGC-uV-jWq">
+                        <barButtonItem key="leftBarButtonItem" title="◉" id="SrM-Jx-2bk">
+                            <connections>
+                                <action selector="menuClick:" destination="ybZ-m1-5xh" id="wIu-HO-v0B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="toM-nX-17z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

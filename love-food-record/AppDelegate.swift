@@ -8,6 +8,20 @@
 
 import UIKit
 
+extension UIView{
+    func menu(){
+        var frame = self.superview?.frame
+        if frame?.origin.x == 0 {
+            frame?.origin.x = 200
+        } else{
+            frame?.origin.x = 0
+        }
+        UIView.animate(withDuration: 0.5){
+            self.superview?.frame = frame!
+        }
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

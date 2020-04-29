@@ -15,6 +15,8 @@
 		8913B1B72457357C005E00F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8913B1B52457357C005E00F7 /* LaunchScreen.storyboard */; };
 		8913B1C22457357C005E00F7 /* love_food_recordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913B1C12457357C005E00F7 /* love_food_recordTests.swift */; };
 		8913B1CD2457357C005E00F7 /* love_food_recordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913B1CC2457357C005E00F7 /* love_food_recordUITests.swift */; };
+		8962676E24596B170080CB49 /* Item1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962676D24596B170080CB49 /* Item1VC.swift */; };
+		8962677024596FDD0080CB49 /* Item2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962676F24596FDD0080CB49 /* Item2TVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8913B1C82457357C005E00F7 /* love-food-recordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "love-food-recordUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8913B1CC2457357C005E00F7 /* love_food_recordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = love_food_recordUITests.swift; sourceTree = "<group>"; };
 		8913B1CE2457357C005E00F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8962676D24596B170080CB49 /* Item1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item1VC.swift; sourceTree = "<group>"; };
+		8962676F24596FDD0080CB49 /* Item2TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item2TVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				8913B1B32457357C005E00F7 /* Assets.xcassets */,
 				8913B1B52457357C005E00F7 /* LaunchScreen.storyboard */,
 				8913B1B82457357C005E00F7 /* Info.plist */,
+				8962676D24596B170080CB49 /* Item1VC.swift */,
+				8962676F24596FDD0080CB49 /* Item2TVC.swift */,
 			);
 			path = "love-food-record";
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8913B1AF24573578005E00F7 /* ViewController.swift in Sources */,
+				8962676E24596B170080CB49 /* Item1VC.swift in Sources */,
 				8913B1AB24573578005E00F7 /* AppDelegate.swift in Sources */,
 				8913B1AD24573578005E00F7 /* SceneDelegate.swift in Sources */,
+				8962677024596FDD0080CB49 /* Item2TVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
