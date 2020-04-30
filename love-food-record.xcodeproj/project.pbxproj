@@ -18,6 +18,8 @@
 		8962676E24596B170080CB49 /* Item1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962676D24596B170080CB49 /* Item1VC.swift */; };
 		8962677024596FDD0080CB49 /* Item2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8962676F24596FDD0080CB49 /* Item2TVC.swift */; };
 		89626772245984E20080CB49 /* Item2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89626771245984E20080CB49 /* Item2VC.swift */; };
+		89D12F85245AD74E006A91E2 /* FireCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D12F84245AD74E006A91E2 /* FireCollectionViewController.swift */; };
+		89D12F87245AD75F006A91E2 /* FireCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D12F86245AD75F006A91E2 /* FireCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		8962676D24596B170080CB49 /* Item1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item1VC.swift; sourceTree = "<group>"; };
 		8962676F24596FDD0080CB49 /* Item2TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item2TVC.swift; sourceTree = "<group>"; };
 		89626771245984E20080CB49 /* Item2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item2VC.swift; sourceTree = "<group>"; };
+		89D12F84245AD74E006A91E2 /* FireCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireCollectionViewController.swift; sourceTree = "<group>"; };
+		89D12F86245AD75F006A91E2 /* FireCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				8962676D24596B170080CB49 /* Item1VC.swift */,
 				8962676F24596FDD0080CB49 /* Item2TVC.swift */,
 				89626771245984E20080CB49 /* Item2VC.swift */,
+				89D12F84245AD74E006A91E2 /* FireCollectionViewController.swift */,
+				89D12F86245AD75F006A91E2 /* FireCollectionViewCell.swift */,
 			);
 			path = "love-food-record";
 			sourceTree = "<group>";
@@ -272,8 +278,10 @@
 				8962676E24596B170080CB49 /* Item1VC.swift in Sources */,
 				8913B1AB24573578005E00F7 /* AppDelegate.swift in Sources */,
 				8913B1AD24573578005E00F7 /* SceneDelegate.swift in Sources */,
+				89D12F87245AD75F006A91E2 /* FireCollectionViewCell.swift in Sources */,
 				89626772245984E20080CB49 /* Item2VC.swift in Sources */,
 				8962677024596FDD0080CB49 /* Item2TVC.swift in Sources */,
+				89D12F85245AD74E006A91E2 /* FireCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
