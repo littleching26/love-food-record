@@ -127,7 +127,7 @@
         <scene sceneID="43c-ix-o3x">
             <objects>
                 <viewController id="ybZ-m1-5xh" customClass="Item1VC" customModule="love_food_record" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I7g-Qb-WYk" customClass="Item1">
+                    <view key="view" contentMode="scaleToFill" id="I7g-Qb-WYk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -135,6 +135,9 @@
                                 <rect key="frame" x="164" y="403" width="87" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="上傳圖片"/>
+                                <connections>
+                                    <action selector="uploadBtnAction:" destination="ybZ-m1-5xh" eventType="touchUpInside" id="wEs-A9-MNk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-qu-2Mr">
                                 <rect key="frame" x="164" y="460" width="87" height="37"/>
@@ -203,7 +206,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zs8-jN-uMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2657.971014492754" y="131.91964285714286"/>
+            <point key="canvasLocation" x="2659" y="119"/>
         </scene>
     </scenes>
 </document>
